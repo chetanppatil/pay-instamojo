@@ -1,0 +1,26 @@
+{
+  "name": "pay-instamojo",
+  "version": "1.0.0",
+  "description": "NPM Package To Connect Instamojo In Node Application Easily",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --exit --recursive --timeout 25000 --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chetan07j/pay-instamojo.git"
+  },
+  "keywords": [
+    "node",
+    "payment",
+    "gateway",
+    "instamojo",
+    "pay"
+  ],
+  "author": "Chetan Patil <chetan0779@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Chetan07j/pay-instamojo/issues"
+  },
+  "homepage": "https://github.com/Chetan07j/pay-instamojo#readme"
+}

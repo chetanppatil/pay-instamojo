@@ -40,9 +40,19 @@ const instamojo = new InstamojoApi({
 });
 ```
 
+### Get List of All Payment Requests
+
+```javascript
+/* For getRequestLists input is not required, hence first parameter is null in this call. */
+
+instamojo.getRequestLists(null, (error, body) => {
+  console.log('RESPONSE: ', error, body);
+});
+```
+
 ## Options
 
-jiraApi options:
+InstamojoApi options:
 
 - `host<string>`: The hostname for instamojo
 - `apiKey<string>`: Instamojo X-Api-Key

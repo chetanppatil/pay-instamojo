@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/Chetan07j/pay-instamojo/issues"
   },
-  "homepage": "https://github.com/Chetan07j/pay-instamojo#readme"
+  "homepage": "https://github.com/Chetan07j/pay-instamojo#readme",
+  "dependencies": {
+    "camelcase-keys": "^4.2.0"
+  }
 }

@@ -59,3 +59,5 @@ typings/
 
 # config folder
 config/
+
+test.js

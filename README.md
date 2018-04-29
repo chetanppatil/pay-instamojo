@@ -25,3 +25,33 @@ Install with the node package manager [npm](http://npmjs.org):
 ```shell
 $ npm install pay-instamojo
 ```
+
+## How To Use?
+
+### Create the Instamojo client
+
+```javascript
+const InstamojoApi = require('pay-instamojo').instamojo;
+
+const instamojo = new InstamojoApi({
+  host: <instamojo-host>,
+  apiKey: <instamojo-x-api-key>,
+  authToken: <instamojo-x-auth-token>
+});
+```
+
+## Options
+
+jiraApi options:
+
+- `host<string>`: The hostname for instamojo
+- `apiKey<string>`: Instamojo X-Api-Key
+- `authToken<string>`: Instamojo X-Auth-Token
+
+## Implemented APIs
+
+- Get List of All Payment Requests
+
+## Changelog
+
+- _1.0.0 Initial version_

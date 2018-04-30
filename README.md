@@ -50,6 +50,28 @@ instamojo.getRequestLists(null, (error, body) => {
 });
 ```
 
+### Create Payment Request
+
+```javascript
+
+let input = {
+  allowRepeatedPayment: <your-choice>, // true or false (boolean)
+  amount: <amount-to-pay>, // e.g., 10
+  buyerName: <buyer-name>,
+  purpose: <purpose-of-payment>,
+  redirectUrl: <redirectUrl-if-any>,
+  phone: <phone-number>, // 10 digit valid phone number if any
+  sendSMS: <your-choice>, // true or false (if true then phone is mandatory)
+  email: <email-id-to-send-payment-link>, // valid email if any
+  sendEmail: <your-choice>, // true or false (if true then email is mandatory)
+  webhook: <webhook-url>
+
+}
+instamojo.createRequest(input, function (error, body) {
+  console.log('RESPONSE:', error, body)
+})
+```
+
 ## Options
 
 InstamojoApi options:
@@ -61,6 +83,7 @@ InstamojoApi options:
 ## Implemented APIs
 
 - Get List of All Payment Requests
+- Create Payment Request
 
 ## Changelog
 

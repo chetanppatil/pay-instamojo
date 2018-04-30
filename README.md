@@ -1,4 +1,4 @@
-# NPM Package For JIRA (Service Desk) REST API
+# NPM Package For Instamojo Payment Gateway REST API
 
 <!-- [![Build Status](https://travis-ci.org/Chetan07j/pay-instamojo.svg?branch=master)](https://travis-ci.org/Chetan07j/pay-instamojo) -->
 [![HitCount](http://hits.dwyl.io/chetan07j/pay-instamojo.svg)](http://hits.dwyl.io/chetan07j/pay-instamojo)

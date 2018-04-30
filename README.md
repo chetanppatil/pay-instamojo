@@ -89,4 +89,5 @@ InstamojoApi options:
 
 ## Changelog
 
+- _1.0.1 request dependency missing (added in package.json)_
 - _1.0.0 Initial version_

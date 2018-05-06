@@ -65,9 +65,36 @@ let input = {
   email: <email-id-to-send-payment-link>, // valid email if any
   sendEmail: <your-choice>, // true or false (if true then email is mandatory)
   webhook: <webhook-url>
-
 }
 instamojo.createRequest(input, function (error, body) {
+  console.log('RESPONSE:', error, body)
+})
+```
+
+### Get Payment Request By Id
+
+```javascript
+
+let input = {
+  paymentRequestId: <payment-request-id>
+}
+instamojo.getPaymentRequestById(input, function (error, body) {
+  console.log('RESPONSE:', error, body)
+})
+```
+
+### Create A Refund Request
+Find input parameter values definition [here](https://docs.instamojo.com/docs/creating-a-refund)
+
+```javascript
+
+let input = {
+  paymentId: <payment-id>, // Id you got as payment acknowledgment
+  type: <code-to-identify-reason-for-this>,
+  refundAmount: <paid-amount>, // not mandatory (if preset then valid amount)
+  body: <text-explaining-refund> // not mandatory
+}
+instamojo.createRefund(input, function (error, body) {
   console.log('RESPONSE:', error, body)
 })
 ```
@@ -86,8 +113,11 @@ InstamojoApi options:
 
 - Get List of All Payment Requests
 - Create Payment Request
+- Get Payment Request By Id
+- Create Refund
 
 ## Changelog
 
+- _1.0.2 get payment request by id, create refund function added_
 - _1.0.1 request dependency missing (added in package.json)_
 - _1.0.0 Initial version_

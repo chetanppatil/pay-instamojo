@@ -99,6 +99,16 @@ instamojo.createRefund(input, function (error, body) {
 })
 ```
 
+### Get List of Refunds
+
+```javascript
+/* For getListOfRefunds input is not required, hence first parameter is null in this call. */
+
+instamojo.getListOfRefunds(null, (error, body) => {
+  console.log('RESPONSE: ', error, body);
+});
+```
+
 ### _Work In Progress, More Is Comming......_
 
 ## Options
@@ -115,6 +125,7 @@ InstamojoApi options:
 - Create Payment Request
 - Get Payment Request By Id
 - Create Refund
+- Get List Of Refunds
 
 ## Changelog
 

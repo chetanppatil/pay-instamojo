@@ -109,7 +109,53 @@ instamojo.getListOfRefunds(null, (error, body) => {
 });
 ```
 
-### _Work In Progress, More Is Comming......_
+### Get Refund Details By Id
+
+```javascript
+
+let input = {
+  refundId: <refund-id>
+}
+instamojo.getRefundDetailsById(input, function (error, body) {
+  console.log('RESPONSE:', error, body)
+})
+```
+
+### Get Payment Details By Id
+
+```javascript
+
+let input = {
+  paymentId: <refund-id>
+}
+instamojo.getPaymentDetailsById(input, function (error, body) {
+  console.log('RESPONSE:', error, body)
+})
+```
+
+### Disable Payment Request By Id
+
+```javascript
+
+let input = {
+  paymentRequestId: <payment-request-id>
+}
+instamojo.disablePaymentRequest(input, function (error, body) {
+  console.log('RESPONSE:', error, body)
+})
+```
+
+### Enable Payment Request By Id
+
+```javascript
+
+let input = {
+  paymentRequestId: <payment-request-id>
+}
+instamojo.enablePaymentRequest(input, function (error, body) {
+  console.log('RESPONSE:', error, body)
+})
+```
 
 ## Options
 
@@ -126,9 +172,14 @@ InstamojoApi options:
 - Get Payment Request By Id
 - Create Refund
 - Get List Of Refunds
+- Get Refund Details By Id
+- Get Payment Details By Id
+- Disable Payment Request By Id
+- Enable Payment Request By Id
 
 ## Changelog
 
+- _1.0.3 getListOfRefunds, getRefundDetailsById, getPaymentDetailsById, disablePaymentRequest, enablePaymentRequest functions added_
 - _1.0.2 get payment request by id, create refund function added_
 - _1.0.1 request dependency missing (added in package.json)_
 - _1.0.0 Initial version_

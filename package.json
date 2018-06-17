@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/Chetan07j/pay-instamojo#readme",
   "dependencies": {
-    "camelcase-keys": "^4.2.0",
+    "camelcase-input": "^1.0.3",
     "request": "^2.85.0"
   }
 }
